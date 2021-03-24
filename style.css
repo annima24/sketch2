@@ -1,0 +1,88 @@
+:root   {
+    --yellow: #ffc600;
+    --cols: ;
+}
+
+html    {
+    box-sizing: border-box;
+    background: cornflowerblue;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2em;
+}
+
+*,
+*::before,
+*::after    {
+    box-sizing: inherit;
+}
+
+body    {
+    margin: 150px 0px;
+}
+
+input   {    
+    background-color: rgb(100, 149, 237);
+    border: 2px solid var(--yellow);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0px 20px;
+    text-align: center;
+}
+
+button  {
+    background-color: rgb(100, 149, 237);
+    border: 2px solid var(--yellow);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1em;
+    margin: 0px 20px;
+}
+#page   {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    align-content: center;
+}
+
+#container  {
+    width: 700px;
+    height: 700px;
+    border: 1px solid var(--yellow);
+    display: grid;
+    grid-template-columns: repeat(var(--cols), 1fr); 
+    grid-template-rows: repeat(var(--cols), 1fr);    
+}
+
+#left   {
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: repeat(10, 50px );
+    gap: 20px;
+}
+
+.box    {
+    border: 1px solid var(--yellow);
+    height: auto;
+    width: auto;
+}
+
+.black  {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.color  {
+    background: pink;
+}
+
+.resetBtn   {
+    font-size: 1em;
+    grid-row: 1;
+}
+
+.sidesInput {    
+    font-weight: 500;
+    font-size: .5em;    
+    grid-row: 2;
+}
+
+.submitBtn  {    
+    grid-row: 3;
+}
