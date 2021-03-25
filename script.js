@@ -44,7 +44,7 @@ function draw(e) {
 
 function listen()   {
     document.querySelectorAll('.box').forEach(box => {
-        box.addEventListener('mouseenter', draw);
+        box.addEventListener('click', draw);
       })
 }
 makeGrid(15);
